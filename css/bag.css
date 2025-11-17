@@ -134,3 +134,101 @@
   height: 14px;
   cursor: pointer;
 }
+/* ===========================
+   RESPONSIVE BAG PAGE
+   =========================== */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .bag-page {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .bag-items-container {
+    width: 60%;
+  }
+
+  .bag-summary {
+    width: 38%;
+  }
+}
+
+/* Mobiles (max-width: 768px) */
+@media (max-width: 768px) {
+
+  /* Bag Page full width */
+  .bag-page {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  /* Items and summary stacked */
+  .bag-items-container,
+  .bag-summary {
+    width: 100%;
+    display: block;
+    border-right: none;
+    padding-right: 0;
+  }
+
+  /* Summary spacing */
+  .bag-summary {
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 1px solid #eaeaec;
+  }
+
+  /* Item container full width */
+  .bag-item-container {
+    display: block;
+    width: 100%;
+    padding: 12px;
+  }
+
+  /* Left Image section */
+  .item-left-part {
+    width: 90px;
+    height: 130px;
+  }
+
+  /* Right item details */
+  .item-right-part {
+    margin-left: 95px;
+    min-height: 130px;
+  }
+
+  /* Remove icon adjust */
+  .remove-from-cart {
+    top: 5px;
+    right: 10px;
+    font-size: 22px;
+  }
+}
+
+/* Small Mobiles (max-width: 480px) */
+@media (max-width: 480px) {
+
+  .item-left-part {
+    width: 75px;
+    height: 120px;
+  }
+
+  .item-right-part {
+    margin-left: 80px;
+  }
+
+  .bag-item-container {
+    padding: 10px;
+  }
+
+  .delivery-details {
+    font-size: 11px;
+  }
+
+  .btn-place-order {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
